@@ -422,7 +422,16 @@ class AppPanel {
             { id: '64', name: 'Lista de Tareas', url: 'https://licteo.github.io/lista-de-tareas-pwa/', icon: 'fas fa-tasks', category: 'productivity', description: 'Gestor de tareas PWA', createdAt: new Date().toISOString() },
             { id: '65', name: 'Juego 3D', url: 'https://licteo.github.io/juego-3D/', icon: 'fas fa-cube', category: 'entertainment', description: 'Juego interactivo en 3D', createdAt: new Date().toISOString() },
             { id: '66', name: 'Generador de Contraseñas', url: 'https://licteo.github.io/Generador-de-contrase-as/', icon: 'fas fa-key', category: 'tools', description: 'Crea contraseñas seguras', createdAt: new Date().toISOString() },
-            { id: '67', name: 'Astrabazaar', url: 'https://licteo.github.io/astrabazaar/', icon: 'fas fa-star', category: 'entertainment', description: 'Explora el bazar de las estrellas', createdAt: new Date().toISOString() }
+            { id: '67', name: 'Astrabazaar', url: 'https://licteo.github.io/astrabazaar/', icon: 'fas fa-star', category: 'entertainment', description: 'Explora el bazar de las estrellas', createdAt: new Date().toISOString() },
+            // NUEVAS APPS SOLICITADAS
+            { id: '68', name: 'Facebook', url: 'https://www.facebook.com/', icon: 'fab fa-facebook', category: 'social', description: 'Red social', createdAt: new Date().toISOString() },
+            { id: '69', name: 'WhatsApp Web', url: 'https://web.whatsapp.com/', icon: 'fab fa-whatsapp', category: 'social', description: 'Mensajería instantánea', createdAt: new Date().toISOString() },
+            { id: '70', name: 'Recetas de Cocina Nestlé', url: 'https://www.recetasnestle.com.mx/', icon: 'fas fa-utensils', category: 'tools', description: 'Recetas de cocina Nestlé', createdAt: new Date().toISOString() },
+            { id: '71', name: 'Dialogflow', url: 'https://dialogflow.cloud.google.com/', icon: 'fas fa-comments', category: 'tools', description: 'Plataforma de chatbots de Google', createdAt: new Date().toISOString() },
+            { id: '72', name: 'Rasa', url: 'https://rasa.com/', icon: 'fas fa-robot', category: 'tools', description: 'Framework de chatbots open source', createdAt: new Date().toISOString() },
+            { id: '73', name: 'Botpress', url: 'https://botpress.com/', icon: 'fas fa-robot', category: 'tools', description: 'Plataforma de chatbots', createdAt: new Date().toISOString() },
+            { id: '74', name: 'ChatterBot', url: 'https://chatterbot.readthedocs.io/', icon: 'fas fa-robot', category: 'tools', description: 'Librería de chatbots en Python', createdAt: new Date().toISOString() },
+            { id: '75', name: 'Wit.ai', url: 'https://wit.ai/', icon: 'fas fa-brain', category: 'tools', description: 'Plataforma de IA conversacional', createdAt: new Date().toISOString() }
         ];
     }
 
