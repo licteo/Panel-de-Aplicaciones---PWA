@@ -339,11 +339,11 @@ class AppPanel {
 
     // Persistencia de datos
     saveApps() {
-        localStorage.setItem('appPanel_apps', JSON.stringify(this.apps));
+        localStorage.setItem('appPanel_apps_v2', JSON.stringify(this.apps));
     }
 
     loadApps() {
-        const saved = localStorage.getItem('appPanel_apps');
+        const saved = localStorage.getItem('appPanel_apps_v2');
         if (saved) {
             return JSON.parse(saved);
         }
@@ -497,7 +497,7 @@ class AppPanel {
 
     clearData() {
         if (confirm('¿Estás seguro de que quieres eliminar todos los datos? Esta acción no se puede deshacer.')) {
-            localStorage.removeItem('appPanel_apps');
+            localStorage.removeItem('appPanel_apps_v2');
             localStorage.removeItem('appPanel_settings');
             this.apps = [];
             this.settings = this.getDefaultSettings();
