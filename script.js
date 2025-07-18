@@ -348,7 +348,7 @@ class AppPanel {
             return JSON.parse(saved);
         }
         // Aplicaciones por defecto (sin duplicados)
-        return [
+        const defaultApps = [
             // Google y utilidades principales
             { id: '1', name: 'Google', url: 'https://www.google.com', icon: 'fab fa-google', category: 'tools', description: 'Motor de búsqueda', createdAt: new Date().toISOString() },
             { id: '2', name: 'YouTube', url: 'https://www.youtube.com', icon: 'fab fa-youtube', category: 'entertainment', description: 'Plataforma de videos', createdAt: new Date().toISOString() },
@@ -433,6 +433,8 @@ class AppPanel {
             { id: '74', name: 'ChatterBot', url: 'https://chatterbot.readthedocs.io/', icon: 'fas fa-robot', category: 'tools', description: 'Librería de chatbots en Python', createdAt: new Date().toISOString() },
             { id: '75', name: 'Wit.ai', url: 'https://wit.ai/', icon: 'fas fa-brain', category: 'tools', description: 'Plataforma de IA conversacional', createdAt: new Date().toISOString() }
         ];
+        // Ordenar alfabéticamente por nombre
+        return defaultApps.sort((a, b) => a.name.localeCompare(b.name, 'es', { sensitivity: 'base' }));
     }
 
     saveSettings() {
